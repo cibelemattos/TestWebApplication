@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimparTest", "SimparTest.csproj", "{2F1F9B2B-5178-4AE4-8588-3BD255B5FCA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimparTest.WebApplication", "src\SimparTest.WebApplication\SimparTest.WebApplication.csproj", "{2F1F9B2B-5178-4AE4-8588-3BD255B5FCA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimparTest.Model", "..\SimparTest.Model\SimparTest.Model.csproj", "{C12DD1FE-4B90-4157-96AD-0127A0AB819B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimparTest.Model", "src\SimparTest.Model\SimparTest.Model.csproj", "{C12DD1FE-4B90-4157-96AD-0127A0AB819B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimparTest.Repository", "..\SimparTest.Repository\SimparTest.Repository.csproj", "{12BB6E4C-B949-46F7-90C5-20F20448DD37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimparTest.Repository", "src\SimparTest.Repository\SimparTest.Repository.csproj", "{12BB6E4C-B949-46F7-90C5-20F20448DD37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CC633800-6FBC-4CD0-8D5C-1AA5474DA293}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +32,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2F1F9B2B-5178-4AE4-8588-3BD255B5FCA6} = {CC633800-6FBC-4CD0-8D5C-1AA5474DA293}
+		{C12DD1FE-4B90-4157-96AD-0127A0AB819B} = {CC633800-6FBC-4CD0-8D5C-1AA5474DA293}
+		{12BB6E4C-B949-46F7-90C5-20F20448DD37} = {CC633800-6FBC-4CD0-8D5C-1AA5474DA293}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4D23677F-6AE8-4032-BDCC-3E8231DAE17A}
